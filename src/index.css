@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+}
+
+/* theme variables */ 
+:root {
+    --bg-primary: #f8fafc;
+    --text-primary: #0f172a;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --gentle-hover: #00000016;
+    --popup-bg: #ffffffb7;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --text-primary: #f8fafc;
+    --accent: #60a5fa;
+    --accent-hover: #3b82f6;
+    --gentle-hover: #ffffff1d;
+    --popup-bg: #00000049;
+}

@@ -6,7 +6,7 @@ import { rootReducer } from "./store/store"
 const rootPersistConfig = {
     key: 'root',
     storage: storage,
-    whitelist: ['userReducer','themeReducer']
+    whitelist: ['userReducer','themeReducer',"globalReducer"]
 }
 
 const persistreducer = persistReducer(rootPersistConfig,rootReducer);

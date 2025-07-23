@@ -3,6 +3,19 @@
     padding: 0;
     font-family: "poppins";
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
 }
 
 /* theme variables */ 

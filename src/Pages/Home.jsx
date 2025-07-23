@@ -1,11 +1,19 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import Navbar from "../Components/global/Navbar"
+import styles from "./Home.module.css"
 
 function Home() {
-    const theme = useSelector((state) => state.themeReducer.mode);
     return (
         <>
-        Hello this is home {theme}
+            {/* <Navbar/> */}
+            <div className={`${styles.mainbox}`}>
+                <div className={`${styles.section} ${styles.dashboard}`}>
+                    <h1>port<span>folio</span>.</h1>
+                    <section>
+                        <p></p>
+                        <span>Game Experience Designer</span>
+                    </section>
+                </div>
+            </div>
         </>
     )
 }

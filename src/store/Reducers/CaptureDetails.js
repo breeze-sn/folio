@@ -7,6 +7,7 @@ const initstate = {
 }
 
 const captureReducer = (state = initstate,action)=>{
+    console.log("Reducer action triggered : ",action)
     switch(action.type){
         case act.UPDATEFACEDETECTED: return{ face: action.payload}
         case act.UPDATEYESDETECTED: return{ eyes: action.payload}

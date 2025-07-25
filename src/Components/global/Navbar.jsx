@@ -18,8 +18,8 @@ function Navbar() {
             link:"/project"
         },
         {
-            title: "Resume",
-            link:"/resume"
+            title: "Contact",
+            link:"/contact"
         }
     ]
 
@@ -31,7 +31,7 @@ function Navbar() {
         <>
             <div className={`${styles.navcontainer}`}>
                 <section>
-                    <p onClick={()=>{changepage("/")}}>Simran Nagekar</p>
+                    <p onClick={()=>{changepage("/")}}>Saman</p>
                 </section>
                 <section>
                     {

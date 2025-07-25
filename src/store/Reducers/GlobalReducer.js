@@ -10,11 +10,15 @@ const initState = {
 export const globalReducer = (state= initState, action) => {
     switch (action.type) {
         case act.CHANGE_PAGE:
-            return {...state, pageChange: {
-                url: action.payload.url,
-                mode: action.payload.mode
-            }}
+            if(action.payload.url !== state.pageChange.url){
+                return {...state, pageChange: {
+                    url: action.payload.url,
+                    mode: action.payload.mode
+                }}
+            }
+            else 
+                return state
 
-        default: return initState;
+        default: return state;
     }
 }

@@ -38,4 +38,17 @@
             }
         }
     }
+
+    .projects{
+        flex-direction: column;
+        /* background-color: peachpuff; */
+        box-sizing: border-box;
+        
+        .header{
+            font-size: 2.5rem;
+            font-weight: 500;
+            padding: 0px 10%;
+            margin: 5% 0px;
+        }
+    }
 }

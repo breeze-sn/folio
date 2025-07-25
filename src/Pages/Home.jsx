@@ -1,7 +1,21 @@
 import Navbar from "../Components/global/Navbar"
 import styles from "./Home.module.css"
+import ProjectCard from "../Components/ProjectCard"
+import { QUICKAIR } from "../Images"
 
 function Home() {
+    const projects = [
+        {
+            name: "Quick Air",
+            subtitle: "UI/UX",
+            image: QUICKAIR
+        },
+        {
+            name: "folio",
+            subtitle: "Web Design",
+            image: null
+        },
+    ]
     return (
         <>
             {/* <Navbar/> */}
@@ -12,6 +26,16 @@ function Home() {
                         <p></p>
                         <span>Game Experience Designer</span>
                     </section>
+                </div>
+                <div className={`${styles.section} ${styles.projects}`}>
+                    <div className={styles.header}>Projects</div>
+                    {
+                        projects.map((project,index)=>{
+                            return(
+                                <ProjectCard project={project} index={1}></ProjectCard>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </>

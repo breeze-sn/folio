@@ -23,7 +23,7 @@ function PageChange() {
                 const slideOutTimeout = setTimeout(() => {
                     setShowBlock(false);
                     setAnimationClass('');
-                    dispatch({type: CHANGE_PAGE,payload: {url: '/',mode: false}});
+                    dispatch({type: CHANGE_PAGE,payload: {url: pageChange.url,mode: false}});
                 }, 1000);
 
                 return () => clearTimeout(slideOutTimeout);

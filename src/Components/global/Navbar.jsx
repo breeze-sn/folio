@@ -31,7 +31,7 @@ function Navbar() {
         <>
             <div className={`${styles.navcontainer}`}>
                 <section>
-                    <p onClick={()=>{changepage("/")}}>Saman</p>
+                    <p onClick={()=>{changepage("/")}}>Simran Nagekar</p>
                 </section>
                 <section>
                     {

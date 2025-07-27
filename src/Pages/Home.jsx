@@ -6,15 +6,16 @@ import { QUICKAIR } from "../Images"
 function Home() {
     const projects = [
         {
-            name: "Quick Air",
-            subtitle: "UI/UX",
-            image: QUICKAIR
-        },
-        {
             name: "folio",
             subtitle: "Web Design",
             image: null
         },
+        {
+            name: "Quick Air",
+            subtitle: "UI/UX",
+            image: QUICKAIR
+        },
+        
     ]
     return (
         <>

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Quick Air",
+        "description": "UI/UX",
+        "about": "QuickAir is an AI-powered resume builder than lets users create personalized resumes through a simple chat with an intelligent assistant, making resume writing easy and accessible for everyone",
+        "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
+        "link": "https://www.behance.net/gallery/230846897/Quick-Air-Case-Study"
+    },
+    {
+        "name": "folio",
+        "description": "Web Design",
+        "about": "A minimally designed portfolio showcasing my work through a monochrome theme, emphasizing simplicity and visual consistency",
+        "skills": ["Adobe Illustrator", "Figma"],
+        "image": null
+    }
+]

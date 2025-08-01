@@ -9,6 +9,7 @@ import "./App.css"
 import Home from "./Pages/Home.jsx";
 import PageChange from "./Components/global/PageChange.jsx";
 import Navbar from "./Components/global/Navbar.jsx";
+import GlobalFooter from "./Components/global/GlobalFooter.jsx";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
                         </Routes>
+                        <GlobalFooter/>
                     </BrowserRouter>
                 </PersistGate>
             </Provider>

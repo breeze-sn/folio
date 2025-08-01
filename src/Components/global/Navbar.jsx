@@ -1,13 +1,11 @@
 import React from 'react'
 import styles from "./Navbar.module.css"
-import { useNavigate } from 'react-router-dom'
 import Navitem from './Navitem'
 import { useDispatch } from 'react-redux'
 import { CHANGE_PAGE } from '../../store/types'
 
 function Navbar() {
     const dispatch = useDispatch();
-    const navigate = useNavigate();
     const Navlinks = [
         {
             title: "About",

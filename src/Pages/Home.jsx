@@ -1,25 +1,15 @@
 import Navbar from "../Components/global/Navbar"
 import styles from "./Home.module.css"
 import ProjectCard from "../Components/ProjectCard"
-import { QUICKAIR } from "../Images"
+import HomeFooter from "../Components/global/HomeFooter"
+
+import projects from '../store/projects.json' with { type: 'json' };
 
 function Home() {
-    const projects = [
-        {
-            name: "folio",
-            subtitle: "Web Design",
-            image: null
-        },
-        {
-            name: "Quick Air",
-            subtitle: "UI/UX",
-            image: QUICKAIR
-        },
-        
-    ]
+    console.log("Projects : ",projects)
     return (
         <>
-            {/* <Navbar/> */}
+            <Navbar/>
             <div className={`${styles.mainbox}`}>
                 <div className={`${styles.section} ${styles.dashboard}`}>
                     <h1>port<span>folio</span>.</h1>
@@ -33,11 +23,12 @@ function Home() {
                     {
                         projects.map((project,index)=>{
                             return(
-                                <ProjectCard project={project} index={1}></ProjectCard>
+                                <ProjectCard project={project} index={index + 1}></ProjectCard>
                             )
                         })
                     }
                 </div>
+                <HomeFooter/>
             </div>
         </>
     )

@@ -13,25 +13,25 @@ function PageChange() {
     const [animationClass, setAnimationClass] = useState('');
     const [showBlock, setShowBlock] = useState(false);
 
-    useEffect(() => {
-        if (pageChange.mode) {
-            setShowBlock(true);
-            setAnimationClass(styles.slidein);
-            const slideInTimeout = setTimeout(() => {
-                navigate(pageChange.url);
-                setAnimationClass(styles.slideout);
-                const slideOutTimeout = setTimeout(() => {
-                    setShowBlock(false);
-                    setAnimationClass('');
-                    dispatch({type: CHANGE_PAGE,payload: {url: pageChange.url,mode: false}});
-                }, 1000);
+        useEffect(() => {
+            if (pageChange.mode) {
+                setShowBlock(true);
+                setAnimationClass(styles.slidein);
+                const slideInTimeout = setTimeout(() => {
+                    navigate(pageChange.url);
+                    setAnimationClass(styles.slideout);
+                    const slideOutTimeout = setTimeout(() => {
+                        setShowBlock(false);
+                        setAnimationClass('');
+                        dispatch({type: CHANGE_PAGE,payload: {url: pageChange.url,mode: false}});
+                    }, 1000);
 
-                return () => clearTimeout(slideOutTimeout);
+                    return () => clearTimeout(slideOutTimeout);
             }, 1000);
 
-            return () => clearTimeout(slideInTimeout);
-        }
-    }, [pageChange.mode, pageChange.url, dispatch]);
+                return () => clearTimeout(slideInTimeout);
+            }
+        }, [pageChange.mode, pageChange.url, dispatch]);
 
     return (
         <>

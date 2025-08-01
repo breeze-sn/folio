@@ -10,6 +10,7 @@ import Home from "./Pages/Home.jsx";
 import PageChange from "./Components/global/PageChange.jsx";
 import Navbar from "./Components/global/Navbar.jsx";
 import GlobalFooter from "./Components/global/GlobalFooter.jsx";
+import ProjectPage from "./Pages/ProjectPage.jsx";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                         <PageChange />
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
+                            <Route path="/project/:index" element={<ProjectPage />}></Route>
                         </Routes>
                         <GlobalFooter/>
                     </BrowserRouter>

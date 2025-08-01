@@ -6,7 +6,6 @@ import HomeFooter from "../Components/global/HomeFooter"
 import projects from '../store/projects.json' with { type: 'json' };
 
 function Home() {
-    console.log("Projects : ",projects)
     return (
         <>
             <Navbar/>

@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     
     .header{
         display: flex;
@@ -45,10 +47,17 @@
             }
         }
 
-        .knowmore{
+        .knowmore span{
+            display: inline-block;
             margin-top: 40px;
             margin-bottom: 100px;
             font-weight: 600;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .knowmore span:hover{
+            cursor: pointer;
+            border-bottom: 2px solid var(--text-primary);
         }
 
         .next{

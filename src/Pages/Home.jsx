@@ -4,12 +4,14 @@ import ProjectCard from "../Components/ProjectCard"
 import HomeFooter from "../Components/global/HomeFooter"
 
 import projects from '../store/projects.json' with { type: 'json' };
+import { useSelector } from "react-redux";
 
 function Home() {
+    const theme = useSelector((state)=> state.themeReducer.mode)
     return (
         <>
             <Navbar/>
-            <div className={`${styles.mainbox}`}>
+            <div className={`${styles.mainbox}`} data-theme={theme}>
                 <div className={`${styles.section} ${styles.dashboard}`}>
                     <h1>port<span>folio</span>.</h1>
                     <section>

@@ -19,6 +19,7 @@ function PageChange() {
                 setAnimationClass(styles.slidein);
                 const slideInTimeout = setTimeout(() => {
                     navigate(pageChange.url);
+                    window.scrollTo(0, 0);
                     setAnimationClass(styles.slideout);
                     const slideOutTimeout = setTimeout(() => {
                         setShowBlock(false);
@@ -28,7 +29,6 @@ function PageChange() {
 
                     return () => clearTimeout(slideOutTimeout);
             }, 1000);
-
                 return () => clearTimeout(slideInTimeout);
             }
         }, [pageChange.mode, pageChange.url, dispatch]);

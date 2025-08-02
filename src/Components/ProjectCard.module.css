@@ -1,14 +1,15 @@
+@import "../index.css";
+
 .maincontainer{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 4% 0px;
-    transition: all 0.5s ease;
 
     b{
         height: 2px;
         width: 10%;
-        background-color: black;
+        background-color: var(--text-primary);
         opacity: 25%;
     }
     span{
@@ -58,7 +59,7 @@
 }
 
 .hover{
-    background-color: rgb(240, 240, 240);
+    background-color: var(--gentle-hover);
     cursor: pointer;
     b{
         width: 15%;

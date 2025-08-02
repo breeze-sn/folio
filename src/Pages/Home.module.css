@@ -1,6 +1,10 @@
+@import "../index.css";
+
 .mainbox{
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
 
     .section{
         height: 100vh;
@@ -30,7 +34,7 @@
             p{
                 width: 500px;
                 height: 2px;
-                background-color: black;
+                background-color: var(--bg-primary);
             }
 
             span{

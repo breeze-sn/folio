@@ -12,8 +12,8 @@ function Home() {
         <>
             <Navbar/>
             <div className={`${styles.mainbox}`} data-theme={theme}>
-                <div className={`${styles.section} ${styles.dashboard}`}>
-                    <h1>port<span>folio</span>.</h1>
+                <div className={`${styles.section} ${styles.dashboard}`}>   
+                    <h1>port<span>folio</span>.</h1>   
                     <section>
                         <p></p>
                         <span>Game Experience Designer</span>
@@ -33,6 +33,6 @@ function Home() {
             </div>
         </>
     )
-}
+}// need to add ellipse after folio, check figma 
 
 export default Home

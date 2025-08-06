@@ -11,6 +11,6 @@ function HomeFooter() {
             </div>
         </>
     )
-}
+} // redesign footer
 
 export default HomeFooter

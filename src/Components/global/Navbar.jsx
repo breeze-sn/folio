@@ -49,9 +49,9 @@ function Navbar() {
                         })
                     }
                     {/* <Toggle onToggle={onToggle}/> */}
-                    <div className={styles.box}>
+                    <div className={styles.box} onClick={onToggle}>
                         <img src={ theme === "light" ? images.LIGHTMODE : images.DARKMODE} alt="error" style={theme !== "light" ? {filter: "invert(100%)"} : null} />
-                        <span onClick={onToggle}>
+                        <span>
                             {
                                 theme === "light" ? "Light" : "Dark"
                             }

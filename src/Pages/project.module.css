@@ -1,12 +1,12 @@
-.project{
+.project {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    
-    .header{
+
+    .header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,31 +14,34 @@
         height: 60vh;
         font-size: 1.1rem;
 
-        h1{
+        h1 {
             font-weight: 600;
         }
     }
 
-    .body{
+    .body {
+        width: 100%;
+        box-sizing: border-box;
         padding: 3% 7%;
         font-size: 1.1rem;
 
-        .about{
+        .about {
             width: 70%;
-            h1{
+
+            h1 {
                 font-weight: 600;
                 margin-bottom: 20px;
             }
         }
 
-        .tools{
+        .tools {
             margin-top: 50px;
-            
-            span{
+
+            span {
                 font-weight: 600;
             }
 
-            div{
+            div {
                 margin-top: 10px;
                 display: flex;
                 flex-direction: row;
@@ -47,30 +50,30 @@
             }
         }
 
-        .knowmore span{
+        .knowmore span {
             display: inline-block;
             margin-top: 40px;
             margin-bottom: 100px;
             font-weight: 600;
             border-bottom: 2px solid transparent;
         }
-        
-        .knowmore span:hover{
+
+        .knowmore span:hover {
             cursor: pointer;
             border-bottom: 2px solid var(--text-primary);
         }
 
-        .next{
+        .next {
             display: flex;
             flex-direction: column;
-            
-            p{
+
+            p {
                 text-transform: uppercase;
                 font-weight: 500;
                 opacity: 50%;
             }
 
-            h1{
+            h1 {
                 font-weight: 600;
                 font-size: 2rem;
             }

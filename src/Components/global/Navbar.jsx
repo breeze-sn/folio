@@ -4,6 +4,7 @@ import Navitem from './Navitem'
 import { useDispatch, useSelector } from 'react-redux'
 import { CHANGE_PAGE, CHANGETHEME } from '../../store/types'
 import Toggle from './Toggle'
+import * as images from "../../Images/index"
 
 function Navbar() {
     const dispatch = useDispatch();
@@ -47,7 +48,15 @@ function Navbar() {
                             )
                         })
                     }
-                    <Toggle onToggle={onToggle}/>
+                    {/* <Toggle onToggle={onToggle}/> */}
+                    <div className={styles.box}>
+                        <img src={ theme === "light" ? images.LIGHTMODE : images.DARKMODE} alt="error" style={theme !== "light" ? {filter: "invert(100%)"} : null} />
+                        <span onClick={onToggle}>
+                            {
+                                theme === "light" ? "Light" : "Dark"
+                            }
+                        </span>
+                    </div>
                 </section>
             </div>
         </>

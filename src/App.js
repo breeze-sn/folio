@@ -11,6 +11,7 @@ import PageChange from "./Components/global/PageChange.jsx";
 import Navbar from "./Components/global/Navbar.jsx";
 import GlobalFooter from "./Components/global/GlobalFooter.jsx";
 import ProjectPage from "./Pages/ProjectPage.jsx";
+import ContactPage from "./Pages/ContactPage.jsx";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
                             <Route path="/project/:index" element={<ProjectPage />}></Route>
+                            <Route path="/contact" element={<ContactPage />}></Route>
                         </Routes>
                         <GlobalFooter/>
                     </BrowserRouter>

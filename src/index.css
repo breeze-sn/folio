@@ -21,8 +21,8 @@
 
 /* theme variables */
 [data-theme="light"] {
-  --bg-primary: #f8fafc;
-  --text-primary: #0f172a;
+  --bg-primary: #ffffff;
+  --text-primary: #1f2431;
   --accent: #3b82f6;
   --accent-hover: #2563eb;
   --gentle-hover: #00000016;

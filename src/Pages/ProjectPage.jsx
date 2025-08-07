@@ -40,7 +40,7 @@ function ProjectPage() {
                     </div>
                     <div className={styles.knowmore} onClick={() => { window.open(project.link, '_blank'); }}>
                         <span>
-                            Know More &rarr;
+                            View project &rarr;
                         </span>
                     </div>
                     {
@@ -50,7 +50,7 @@ function ProjectPage() {
                             <h1>{nextProject.name}</h1>
                             <div className={styles.knowmore} onClick={() => { changepage(index + 1) }}>
                                 <span>
-                                    Know More &rarr;
+                                    Know more &rarr;
                                 </span>
                             </div>
                         </div>

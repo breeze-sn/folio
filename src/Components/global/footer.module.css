@@ -10,22 +10,27 @@
 
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: black;
     color: white;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0% 10%;
     padding-top: 100px;
     font-size: 1.4rem;
 
-    p{  
-        opacity: 50%;
+    section{
+        width: 50%;
+        p{  
+            opacity: 50%;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        span{
+            margin-top: 30px;
+        }
     }
-    h2{
-        font-size: 3rem;
-        font-weight: 500;
-    }
-    span{
-        margin-top: 30px;
-    }
+
 }

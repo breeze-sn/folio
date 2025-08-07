@@ -9,6 +9,8 @@
     input,
     textarea{
         padding-bottom: 10px;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
         margin-bottom: 20px;
         width: 100%;
         outline: none;

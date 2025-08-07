@@ -7,6 +7,9 @@ import InputField from '../Components/global/InputField'
 
 function ContactPage() {
     const theme = useSelector((state) => state.themeReducer.mode)
+    const sendMessage = () => {
+        
+    }
     return (
         <>
             <div className={styles.contact_container} data-theme={theme}>
@@ -16,7 +19,7 @@ function ContactPage() {
                     <InputField placeholder="Your Name" type="text" />
                     <InputField placeholder="Email" type="email" />
                     <InputField placeholder="Message" type="textarea" />
-                    <section>
+                    <section onClick={sendMessage}>
                         <p>Submit</p>
                         <Icon DarkMode={images.PAPER_PLANE} LightMode={images.PAPER_PLANE}></Icon>
                     </section>

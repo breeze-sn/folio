@@ -33,14 +33,19 @@
             align-items: center;
             justify-content: flex-end;
             width: 100%;
-            gap: 10px;
+            
+            p,
+            img{
+                cursor: pointer;
+            }
 
             p{
-                
+                font-size: 1.5rem;
             }
 
             img{
                 width: 30px;
+                padding-left: 10px;
             }
         }
     }

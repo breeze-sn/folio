@@ -61,7 +61,7 @@ function HomeFooter() {
                     <span>say hello &rarr;</span>
                 </section>
                 <ul>
-                    <Navitem title="Home" onclick={null} style={{opacity: "50%", border: "none !important"}} disabled={true}></Navitem>
+                    <Navitem title="Menu" onclick={null} style={{opacity: "50%", border: "none !important"}} disabled={true}></Navitem>
                     {
                         Navlinks.map((item, key) => {
                             return (
@@ -70,7 +70,7 @@ function HomeFooter() {
                                 </>
                             )
                         })
-                    } 
+                    }
                 </ul>
                 <ul>
                     <Navitem title="Socials" onclick={null} style={{opacity: "50%", border: "none !important"}} disabled={true}></Navitem>

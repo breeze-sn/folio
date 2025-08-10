@@ -31,7 +31,7 @@ function HomeFooter() {
         },
         {
             title: "Bento",
-            link: "/https://bento.me/breezee"
+            link: "https://bento.me/breezee"
         },
         {
             title: "Github",
@@ -39,7 +39,7 @@ function HomeFooter() {
         },
         {
             title: "Behance",
-            link: "/https://www.behance.net/simrannagekar"
+            link: "https://www.behance.net/simrannagekar"
         }
     ]
 

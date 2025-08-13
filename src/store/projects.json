@@ -2,15 +2,15 @@
     {
         "name": "folio",
         "description": "Web Design",
-        "about": "A minimally designed portfolio showcasing my work through a monochrome theme, emphasizing simplicity and visual consistency",
+        "about": "A minimally designed portfolio showcasing my work through a monochrome theme, emphasizing simplicity and visual consistency.",
         "skills": ["Adobe Illustrator", "Figma"],
         "link": "https://github.com/breeze-sn/folio"
     },
     {
         "name": "Quick Air",
         "description": "UI/UX",
-        "about": "QuickAir is an AI-powered resume builder than lets users create personalized resumes through a simple chat with an intelligent assistant, making resume writing easy and accessible for everyone",
-        "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
+        "about": "QuickAir is an AI-powered resume builder than lets users create personalized resumes through a simple chat with an intelligent assistant, making resume writing easy and accessible for everyone.",
+        "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Framer"],
         "link": "https://www.behance.net/gallery/230187655/Quick-Air"
     }
     

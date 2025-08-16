@@ -16,7 +16,7 @@ function ContactPage() {
                 <div className={styles.header}>
                     <span>Contact</span>
                     <h1>Get in touch.</h1>
-                    <InputField placeholder="Your Name" type="text" />
+                    <InputField placeholder="Name" type="text" />
                     <InputField placeholder="Email" type="email" />
                     <InputField placeholder="Message" type="textarea" />
                     <section onClick={sendMessage}>

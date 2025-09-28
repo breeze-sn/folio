@@ -3,8 +3,15 @@
         "name": "folio",
         "description": "Web Design",
         "about": "A minimally designed portfolio showcasing my work through a monochrome theme, emphasizing simplicity and visual consistency.",
-        "skills": ["Adobe Illustrator", "Figma"],
+        "skills": ["Adobe Illustrator", "Figma", "ReactJS"],
         "link": "https://github.com/breeze-sn/folio"
+    },
+    {
+        "name": "OXO Redesign",
+        "description": "Game Design",
+        "about": "OXO Redesign is a modern take on the classic tic-tac-toe game, featuring a sleek interface and enhanced gameplay mechanics.",
+        "skills": ["Figma", "TypeScript"],
+        "link": "https://oxo.figma.site"
     },
     {
         "name": "Quick Air",
@@ -12,5 +19,5 @@
         "about": "QuickAir is an AI-powered resume builder than lets users create personalized resumes through a simple chat with an intelligent assistant, making resume writing easy and accessible for everyone.",
         "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Framer"],
         "link": "https://www.behance.net/gallery/230187655/Quick-Air"
-    }  
+    } 
 ]

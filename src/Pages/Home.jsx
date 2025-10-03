@@ -33,6 +33,6 @@ function Home() {
             </div>
         </>
     )
-}// need to add ellipse after folio, check figma 
+}
 
 export default Home

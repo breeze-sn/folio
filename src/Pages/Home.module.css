@@ -7,11 +7,11 @@
     color: var(--text-primary);
 
     .section{
-        height: 100vh;
         width: 100vw;
         display: flex;
     }
     .dashboard{
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -46,7 +46,6 @@
 
     .projects{
         flex-direction: column;
-        /* background-color: peachpuff; */
         box-sizing: border-box;
         
         .header{

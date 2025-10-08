@@ -1,17 +1,22 @@
 @import "../index.css";
 
-.mainbox{
+.mainbox {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-primary);
     color: var(--text-primary);
 
-    .section{
+    .section {
         width: 100vw;
         display: flex;
     }
-    .dashboard{
+
+    .dashboard,
+    .about {
         height: 100vh;
+    }
+
+    .dashboard {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -19,11 +24,11 @@
         padding: 0% 20%;
         box-sizing: border-box;
 
-        span{
+        span {
             font-weight: 400;
         }
 
-        section{
+        section {
             display: inherit;
             flex-direction: row;
             align-items: center;
@@ -32,23 +37,99 @@
             width: 100%;
 
 
-            p{
+            p {
                 width: 480px;
                 height: 2px;
                 background-color: var(--text-primary);
             }
 
-            span{
+            span {
                 font-size: 1rem;
             }
         }
     }
 
-    .projects{
+    .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .left,
+        .right {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left {
+            width: 40%;
+        }
+
+        .right {
+            width: 60%;
+            box-sizing: border-box;
+            padding-right: 10%;
+
+            .section{
+
+            }
+
+            .aboutSection {
+                margin-bottom: 2.5rem;
+            }
+    
+            .aboutTitle {
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 0.25rem;
+            }
+    
+            .name {
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 0.25rem;
+            }
+    
+            .subtitle {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+    
+            .expertiseSection {
+                margin-top: 1.5rem;
+            }
+    
+            .expertiseTitle {
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+    
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem 2rem;
+            }
+    
+            .expertiseHeading {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 0.25rem;
+            }
+    
+            .expertiseText {
+                font-size: 1rem;
+            }
+        }        
+    }
+
+    .projects {
         flex-direction: column;
         box-sizing: border-box;
-        
-        .header{
+
+        .header {
             font-size: 2.5rem;
             font-weight: 500;
             padding: 0px 10%;

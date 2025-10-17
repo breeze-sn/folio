@@ -1,0 +1,20 @@
+.reveal-block {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-text {
+  position: relative;
+  z-index: 1;
+}
+
+.reveal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: 2;
+  background: black; 
+}

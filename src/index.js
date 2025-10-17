@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
 import { store, } from "./store/store.js"
 import { Persistor } from './reducer.js';
+import {gsap} from "gsap";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

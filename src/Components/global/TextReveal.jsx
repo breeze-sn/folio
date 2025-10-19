@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import "./RevealText.css";
+import "./TextReveal.css";
 
 const RevealText = ({ text, color = "black", delay = 0 }) => {
   const textRef = useRef(null);

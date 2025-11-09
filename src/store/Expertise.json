@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Game Design",
+        "description": "Designing immersive gameplay, intuitive interfaces, and cohesive game worlds."
+    },
+    {
+        "name": "Game Testing",
+        "description": "Improving game quality through detailed testing, feedback, and balance refinement."
+    },
+    {
+        "name": "Product Design",
+        "description": "Designing intuitive, user-focused products with creativity and functionality."
+    },
+    {
+        "name": "UI Design",
+        "description": "Creating clean, user-friendly interfaces with a minimalist, user-focused approach."
+    }
+]

@@ -4,30 +4,16 @@ import ProjectCard from "../Components/ProjectCard"
 import HomeFooter from "../Components/global/HomeFooter"
 
 import projects from '../store/projects.json' with { type: 'json' };
+import Expertise from '../store/Expertise.json' with { type: 'json' };
 import { useSelector } from "react-redux";
+
+import TextReveal from "../Components/global/TextReveal"
 
 import * as images from "../Images"
 
 function Home() {
     const theme = useSelector((state) => state.themeReducer.mode)
-    const Expertise = [
-        {
-            name: "Game Design",
-            description: "Designing immersive gameplay, intuitive interfaces, and cohesive game worlds."
-        },
-        {
-            name: "Game Testing",
-            description: "Improving game quality through detailed testing, feedback, and balance refinement."
-        },
-        {
-            name: "Product Design",
-            description: "Designing intuitive, user-focused products with creativity and functionality."
-        },
-        {
-            name: "UI Design",
-            description: "Creating clean, user-friendly interfaces with a minimalist, user-focused approach."
-        }
-    ]
+
     return (
         <>
             <Navbar />
@@ -41,7 +27,7 @@ function Home() {
                 </div>
                 <div className={`${styles.section} ${styles.about}`}>
                     <div className={`${styles.left}`}>
-                        <img src={images.PROFILE_VECTOR} alt="Error" />
+                        <img src={images.PROFILE_VECTOR} alt="Error" style={theme === "dark" ? {filter: "revert"}:null}/>
                     </div>
                     <div className={styles.right}>
                         <section>

@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { PersistGate } from "redux-persist/integration/react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Provider } from "react-redux"

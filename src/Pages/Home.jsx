@@ -7,7 +7,6 @@ import projects from '../store/projects.json' with { type: 'json' };
 import Expertise from '../store/Expertise.json' with { type: 'json' };
 import { useSelector } from "react-redux";
 
-import TextReveal from "../Components/global/TextReveal"
 
 import * as images from "../Images"
 

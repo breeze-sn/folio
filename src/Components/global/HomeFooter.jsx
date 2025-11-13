@@ -1,8 +1,7 @@
-import React from 'react'
 import styles from "./footer.module.css"
 import Navitem from "./Navitem"
 import { CHANGE_PAGE } from '../../store/types'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 function HomeFooter() {
     const dispatch = useDispatch()

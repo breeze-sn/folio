@@ -19,5 +19,13 @@
         "about": "QuickAir is an AI-powered resume builder than lets users create personalized resumes through a simple chat with an intelligent assistant, making resume writing easy and accessible for everyone.",
         "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Framer"],
         "link": "https://www.behance.net/gallery/230187655/Quick-Air"
+    
+    },
+    {
+        "name": "Community Design & Identity",
+        "description": "Brand Design",
+        "about": "A community design showcasing  a cohesive visual identity of Google Developer Groups On Campus REVA University.",
+        "skills": ["Adobe Illustrator", "Figma", "Affinity Designer"],
+        "link": "https://www.behance.net/gallery/238530857/GDGoC-REVA-University-Community-Design-Identity"
     } 
 ]

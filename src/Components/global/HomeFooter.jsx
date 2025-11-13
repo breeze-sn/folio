@@ -63,11 +63,9 @@ function HomeFooter() {
                 <ul>
                     <Navitem title="Menu" onclick={null} style={{opacity: "50%", border: "none !important"}} disabled={true}></Navitem>
                     {
-                        Navlinks.map((item, key) => {
+                        Navlinks.map((item, index) => {
                             return (
-                                <>
-                                    <Navitem title={item.title} onclick={() => { changepage(item.link) }}></Navitem>
-                                </>
+                                <Navitem key={index} title={item.title} onclick={() => { changepage(item.link) }}></Navitem>
                             )
                         })
                     }
@@ -75,11 +73,9 @@ function HomeFooter() {
                 <ul>
                     <Navitem title="Socials" onclick={null} style={{opacity: "50%", border: "none !important"}} disabled={true}></Navitem>
                     {
-                        Navlinks2.map((item, key) => {
+                        Navlinks2.map((item, index) => {
                             return (
-                                <>
-                                    <Navitem title={item.title} onclick={() => { changepage(item.link) }}></Navitem>
-                                </>
+                                <Navitem key={index} title={item.title} onclick={() => { changepage(item.link) }}></Navitem>
                             )
                         })
                     } 

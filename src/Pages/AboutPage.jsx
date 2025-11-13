@@ -2,6 +2,7 @@ import styles from "./about.module.css"
 import { useSelector } from 'react-redux'
 import * as images from "../Images/index"
 import HomeFooter from "../Components/global/HomeFooter"
+import resumePDF from "../Components/Files/resume.pdf"
 
 function AboutPage() {
     const theme = useSelector((state) => state.themeReducer.mode);
@@ -20,8 +21,8 @@ function AboutPage() {
 
     const handleDownloadResume = () => {
         const link = document.createElement('a');
-        link.href = '/src/Components/Files/resume.pdf';
-        link.download = 'resume.pdf';
+        link.href = resumePDF;
+        link.download = 'Resume-SimranNagekar.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

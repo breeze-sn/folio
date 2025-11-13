@@ -35,7 +35,7 @@ function Home() {
                                 <h3 className={styles.aboutTitle}>About</h3>
                                 <h1 className={styles.name}>Simran Nagekar</h1>
                                 <p className={styles.subtitle}>
-                                    Game Enthusiast & Creative Technology Explorer.
+                                    Design Generalist & Creative Technology Explorer.
                                 </p>
                             </div>
 

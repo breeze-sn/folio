@@ -55,7 +55,7 @@ function HomeFooter() {
     return (
         <>
             <div className={styles.footer}>
-                <section>
+                <section onClick={() => changepage('/contact')} style={{cursor: 'pointer'}}>
                     <p>Want to collaborate?</p>
                     <h2>Let's work together.</h2>
                     <span>say hello &rarr;</span>

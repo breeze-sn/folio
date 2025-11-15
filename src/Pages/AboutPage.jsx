@@ -9,7 +9,7 @@ function AboutPage() {
 
     const socialLinks = [
         { name: 'LinkedIn', url: 'https://linkedin.com/in/simransn', icon: images.LINKEDIN },
-        { name: 'Behance', url: 'https://behance.net/', icon: images.BEHANCE },
+        { name: 'Behance', url: 'https://behance.net/simrannagekar', icon: images.BEHANCE },
         { name: 'Medium', url: 'https://medium.com/@breezesn', icon: images.MEDIUM },
         { name: 'Codepen', url: 'https://codepen.io/Simran-Nagekar', icon: images.CODEPEN },
         { name: 'Instagram', url: 'https://instagram.com/simran.nagekar', icon: images.INSTAGRAM },
@@ -48,8 +48,7 @@ function AboutPage() {
                             I originate from the serene coastal town of Karwar, Karnataka but currently based in Bangalore, pursuing my bachelor's degree in Computer Science with a specialization in Multimedia and Animation at REVA University.
                         </p>
                         <p className={styles.paragraph}>
-                            From a young age, games have fascinated me — not just as entertainment, but as worlds filled with endless possibilities. I've always been curious about how games work, how they can spark joy, and how creativity shapes the experiences we enjoy. This curiosity has grown into a journey of learning, experimenting, and building.
-                        </p>
+                            From a young age, games have fascinated me — not just as entertainment, but as worlds filled with endless possibilities. I've always been curious about how games work, how they can spark joy, and how creativity shapes the experiences we enjoy. This curiosity has grown into a journey of learning, experimenting, and building.                        </p>
                         <p className={styles.paragraph}>
                             I design immersive experiences in Game Design, ensure seamless gameplay through Game Testing, craft intuitive UI/UX, and build Product Designs. I embrace challenges, keep evolving, and stay focused on turning my goals into reality.
                         </p>

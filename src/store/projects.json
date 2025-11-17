@@ -7,11 +7,12 @@
         "link": "https://github.com/breeze-sn/folio"
     },
     {
-        "name": "OXO Redesign",
+        "name": "Astro Dodge",
         "description": "Game Design",
-        "about": "OXO Redesign is a modern take on the classic tic-tac-toe game, featuring a sleek interface and enhanced gameplay mechanics.",
-        "skills": ["Figma", "TypeScript"],
-        "link": "https://oxo.figma.site"
+        "about": "Astro Dodge is an arcade space-survival game where players dodge asteroids, collect rewards, and chase high scores. I designed the UI, created game assets, proposed animation ideas, and helped shape the overall visual and gameplay feel.",
+        "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Unity"],
+        "link": "https://play.google.com/store/apps/details?id=com.BlitzauraGames.AstroDodge&pcampaignid=web_share"
+    
     },
     {
         "name": "Quick Air",
@@ -22,18 +23,17 @@
     
     },
     {
-        "name": "Astro Dodge",
-        "description": "Game Design",
-        "about": "Astro Dodge is an arcade space-survival game where players dodge asteroids, collect rewards, and chase high scores. I designed the UI, created game assets, proposed animation ideas, and helped shape the overall visual and gameplay feel.",
-        "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Unity"],
-        "link": "https://play.google.com/store/apps/details?id=com.BlitzauraGames.AstroDodge&pcampaignid=web_share"
-    
-    },
-    {
         "name": "GDG Community Design & Identity",
         "description": "Brand Design",
         "about": "A community design showcasing  a cohesive visual identity of Google Developer Groups On Campus REVA University.",
         "skills": ["Adobe Illustrator", "Figma", "Affinity Designer"],
         "link": "https://www.behance.net/gallery/238530857/GDGoC-REVA-University-Community-Design-Identity"
-    } 
+    },
+    {
+        "name": "OXO Redesign",
+        "description": "Game Design",
+        "about": "OXO Redesign is a modern take on the classic tic-tac-toe game, featuring a sleek interface and enhanced gameplay mechanics.",
+        "skills": ["Figma", "TypeScript"],
+        "link": "https://oxo.figma.site"
+    }
 ]

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './poppins-fonts.css';
 import './index.css';
+import './fontEnforcer';
 import App from './App.js';
 import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'

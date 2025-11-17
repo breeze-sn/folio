@@ -6,6 +6,7 @@ import HomeFooter from "../Components/global/HomeFooter"
 import projects from '../store/projects.json' with { type: 'json' };
 import Expertise from '../store/Expertise.json' with { type: 'json' };
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 
 import * as images from "../Images"
@@ -62,12 +63,16 @@ function Home() {
                 <div className={`${styles.section} ${styles.projects}`}>
                     <div className={styles.header}>Projects</div>
                     {
-                        projects.map((project, index) => {
+                        projects.slice(0, 2).map((project, index) => {
                             return (
-                                <ProjectCard project={project} index={index + 1}></ProjectCard>
+                                <ProjectCard key={index} project={project} index={index + 1}></ProjectCard>
                             )
                         })
                     }
+                    <div className={styles.viewAllContainer}>
+                        <div className={styles.more}>THERE'S MORE</div>
+                        <Link to="/project" className={styles.viewAllLink}>view all projects &rarr; </Link>
+                    </div>
                 </div>
                 <HomeFooter />
             </div>

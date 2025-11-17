@@ -1,0 +1,27 @@
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 5% 0;
+
+    .header {
+        font-size: 3rem;
+        font-weight: 500;
+        padding: 0px 10%;
+        margin-bottom: 3%;
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+}

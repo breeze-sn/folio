@@ -72,9 +72,6 @@
             box-sizing: border-box;
             padding-right: 10%;
 
-            .section{
-
-            }
 
             .aboutSection {
                 margin-bottom: 2.5rem;
@@ -133,7 +130,44 @@
             font-size: 2.5rem;
             font-weight: 500;
             padding: 0px 10%;
-            margin: 5% 0px;
+            margin: 5% 0px 1% 0px;
+        }
+
+        .description {
+            font-size: 1rem;
+            padding: 0px 10%;
+            margin-bottom: 3%;
+            opacity: 0.8;
+        }
+
+        .viewAllContainer {
+            padding: 0px 10%;
+            margin: 3% 0px 5% 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            
+            .more {
+                font-size: 1rem;
+                color: var(--text-primary);
+                font-weight: 500;
+                opacity: 0.7;
+            }
+            
+            .viewAllLink {
+                font-size: 2rem;
+                color: var(--text-primary);
+                text-decoration-thickness: 1px;
+                font-weight: 500;
+                opacity: 1;
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    opacity: 0.8;
+                    text-decoration-thickness: 1.5px;
+                }
+            }
         }
     }
 }

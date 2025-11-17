@@ -9,6 +9,7 @@ import PageChange from "./Components/global/PageChange.jsx";
 import Navbar from "./Components/global/Navbar.jsx";
 import GlobalFooter from "./Components/global/GlobalFooter.jsx";
 import ProjectPage from "./Pages/ProjectPage.jsx";
+import ProjectsPage from "./Pages/ProjectsPage.jsx";
 import ContactPage from "./Pages/ContactPage.jsx";
 import AboutPage from "./Pages/AboutPage.jsx";
 
@@ -23,6 +24,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
                             <Route path="/about" element={<AboutPage />}></Route>
+                            <Route path="/project" element={<ProjectsPage />}></Route>
                             <Route path="/project/:index" element={<ProjectPage />}></Route>
                             <Route path="/contact" element={<ContactPage />}></Route>
                         </Routes>

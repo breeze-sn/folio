@@ -71,8 +71,8 @@ Any use of this code, design, structure, or logic **without written permission i
 
 **All Rights Reserved © 2025 Simran Nagekar**
 
-This codebase, design system, and website content are the **exclusive intellectual property** of the author.  
-Unauthorized copying, reproduction, or distribution of this project is strictly prohibited.
+This codebase, design system, and website content are the **exclusive property** of the author.  
+Unauthorized reproduction, or distribution of this project is strictly prohibited.
 
 ---
 

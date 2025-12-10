@@ -65,6 +65,14 @@
 
         .left {
             width: 40%;
+            
+            img {
+                background: transparent;
+            }
+        }
+        
+        [data-theme="dark"] & .left img {
+            mix-blend-mode: screen;
         }
 
         .right {

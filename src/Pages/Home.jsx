@@ -5,14 +5,19 @@ import HomeFooter from "../Components/global/HomeFooter"
 
 import projects from '../store/projects.json' with { type: 'json' };
 import Expertise from '../store/Expertise.json' with { type: 'json' };
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { CHANGE_PAGE } from "../store/types";
 
 
 import * as images from "../Images"
 
 function Home() {
-    const theme = useSelector((state) => state.themeReducer.mode)
+    const dispatch = useDispatch();
+    const theme = useSelector((state) => state.themeReducer.mode);
+
+    const changepage = (path) => {
+        dispatch({ type: CHANGE_PAGE, payload: { url: path, mode: true } });
+    };
 
     return (
         <>
@@ -27,7 +32,7 @@ function Home() {
                 </div>
                 <div className={`${styles.section} ${styles.about}`}>
                     <div className={`${styles.left}`}>
-                        <img src={images.PROFILE_VECTOR} alt="Error" style={theme === "dark" ? {filter: "revert"}:null}/>
+                        <img src={images.PROFILE_VECTOR} alt="Error" style={theme === "dark" ? {filter: "invert(1)"}:null}/>
                     </div>
                     <div className={styles.right}>
                         <section>
@@ -71,7 +76,7 @@ function Home() {
                     }
                     <div className={styles.viewAllContainer}>
                         <div className={styles.more}>THERE'S MORE</div>
-                        <Link to="/project" className={styles.viewAllLink}>view all projects &rarr; </Link>
+                        <div onClick={() => changepage('/project')} className={styles.viewAllLink}>view all projects &rarr;</div>
                     </div>
                 </div>
                 <HomeFooter />

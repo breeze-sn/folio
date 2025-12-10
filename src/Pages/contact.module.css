@@ -28,12 +28,26 @@
             font-weight: 300;
         }
 
+        .status_message {
+            font-size: 1rem;
+            color: var(--text-primary);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: rgba(0, 255, 0, 0.1);
+        }
+
         section{
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: flex-end;
             width: 100%;
+            transition: opacity 0.3s ease;
+            
+            &:hover {
+                opacity: 0.6;
+            }
             
             p,
             img{

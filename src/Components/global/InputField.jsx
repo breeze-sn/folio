@@ -1,23 +1,30 @@
 import React, { useState } from 'react'
 import styles from "./inputfield.module.css"
 
-function InputField({ type, placeholder }) {
+function InputField({ type, placeholder, value, onChange }) {
     const [InputValue, setInputValue] = useState("")
 
     const ChangeText = (e) => {
-        setInputValue(e.target.value)
+        const newValue = e.target.value
+        setInputValue(newValue)
+        if (onChange) {
+            onChange(newValue)
+        }
     }
+
+    // Use controlled value if provided, otherwise use local state
+    const displayValue = value !== undefined ? value : InputValue
 
     return (
         <>
             <div className={styles.inputfield}>
                 <i 
-                    style={InputValue === "" ? { opacity: 1 } : { opacity: 0.5 }}
+                    style={displayValue === "" ? { opacity: 1 } : { opacity: 0.5 }}
                 >{placeholder}</i>
                 {
                     type === "textarea" ?
-                        <textarea onChange={ChangeText} />
-                        : <input type={type} onChange={ChangeText} />
+                        <textarea value={displayValue} onChange={ChangeText} />
+                        : <input type={type} value={displayValue} onChange={ChangeText} />
                 }
             </div>
         </>

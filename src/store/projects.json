@@ -23,6 +23,14 @@
     
     },
     {
+        "name": "BallBack!",
+        "description": "Game Design",
+        "about": "BallBack! is a hyper-casual 2D endless arcade game where players control a floating ball in an infinite sky filled with obstacles and collectibles. The game focuses on skill-based gameplay, smooth controls, and high replayability.",
+        "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Unity"],
+        "link": "https://github.com/breeze-sn/Ballback"
+
+    },
+    {
         "name": "GDG Community Design & Identity",
         "description": "Brand Design",
         "about": "A community design showcasing  a cohesive visual identity of Google Developer Groups On Campus REVA University.",

@@ -52,10 +52,12 @@ function Home() {
                                         Expertise.map((item)=>{
                                             return(
                                                 <div>
-                                                    <h4 className={styles.expertiseHeading}>{item.name}</h4>
-                                                    <p className={styles.expertiseText}>
-                                                        {item.description}
-                                                    </p>
+                                                    <div className={styles.expertiseContent}>
+                                                        <h4 className={styles.expertiseHeading}>{item.name}</h4>
+                                                        <p className={styles.expertiseText}>
+                                                            {item.description}
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             )
                                         })
@@ -77,6 +79,14 @@ function Home() {
                     <div className={styles.viewAllContainer}>
                         <div className={styles.more}>THERE'S MORE</div>
                         <div onClick={() => changepage('/project')} className={styles.viewAllLink}>view all projects &rarr;</div>
+                    </div>
+                </div>
+                <div className={styles.mobileFooterSection}>
+                    <div className={styles.footerTitle}>Quick Links</div>
+                    <div className={styles.footerLinks}>
+                        <a onClick={() => changepage('/about')}>about</a>
+                        <a onClick={() => changepage('/project')}>projects</a>
+                        <a onClick={() => changepage('/contact')}>contact</a>
                     </div>
                 </div>
                 <HomeFooter />

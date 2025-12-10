@@ -32,5 +32,118 @@
             margin-top: 30px;
         }
     }
+}
 
+/* Tablet View */
+@media (max-width: 1024px) {
+    .globalfooter {
+        font-size: 1.1rem;
+        padding-top: 80px;
+    }
+
+    .footer {
+        padding: 0% 8%;
+        padding-top: 80px;
+        font-size: 1.3rem;
+
+        section {
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .globalfooter {
+        font-size: 0.875rem;
+        padding-top: 48px;
+        padding-bottom: 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 80px 24px !important;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #000 !important;
+
+        section {
+            width: 100%;
+            margin-bottom: 0px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                font-size: 0.8125rem !important;
+                opacity: 0.5 !important;
+                margin-bottom: 12px !important;
+                color: #999 !important;
+            }
+
+            h2 {
+                font-size: 1.75rem !important;
+                font-weight: 600 !important;
+                line-height: 1.2 !important;
+                margin: 0 0 20px 0 !important;
+                color: #fff !important;
+            }
+
+            span {
+                margin-top: 0px !important;
+                font-size: 1.0625rem !important;
+                display: inline-block !important;
+                color: #fff !important;
+            }
+        }
+
+        ul {
+            display: none !important;
+        }
+    }
+    
+    .globalfooter {
+        font-size: 0.875rem !important;
+        padding-top: 48px !important;
+        padding-bottom: 24px !important;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #000 !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .globalfooter {
+        font-size: 0.9rem;
+        padding-top: 50px;
+    }
+
+    .footer {
+        padding: 0% 5%;
+        padding-top: 50px;
+        font-size: 1.1rem;
+
+        section {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            span {
+                margin-top: 15px;
+                display: block;
+            }
+        }
+    }
 }

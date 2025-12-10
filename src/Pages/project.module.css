@@ -80,3 +80,91 @@
         }
     }
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .project {
+        padding-top: 80px !important;
+
+        .header {
+            height: 50vh !important;
+            padding: 0 24px !important;
+            font-size: 0.875rem !important;
+
+            h1 {
+                font-size: 1.5rem !important;
+                font-weight: 600 !important;
+                text-align: center !important;
+            }
+
+            span {
+                font-size: 0.875rem !important;
+                text-align: center !important;
+                margin-top: 12px !important;
+            }
+        }
+
+        .body {
+            padding: 24px !important;
+            font-size: 0.875rem !important;
+
+            .about {
+                width: 100% !important;
+
+                h1 {
+                    font-size: 1.25rem !important;
+                    font-weight: 600 !important;
+                    margin-bottom: 16px !important;
+                }
+
+                p {
+                    font-size: 0.875rem !important;
+                    line-height: 1.6 !important;
+                }
+            }
+
+            .tools {
+                margin-top: 32px !important;
+
+                span {
+                    font-size: 1rem !important;
+                    font-weight: 600 !important;
+                }
+
+                div {
+                    margin-top: 12px !important;
+                    flex-wrap: wrap !important;
+                    gap: 12px !important;
+
+                    p {
+                        font-size: 0.8125rem !important;
+                    }
+                }
+            }
+
+            .knowmore span {
+                margin-top: 32px !important;
+                margin-bottom: 60px !important;
+                font-size: 1rem !important;
+                font-weight: 600 !important;
+                border-bottom: none !important;
+            }
+
+            .knowmore span:hover {
+                border-bottom: none !important;
+            }
+
+            .next {
+                p {
+                    font-size: 0.8125rem !important;
+                    margin-bottom: 8px !important;
+                }
+
+                h1 {
+                    font-size: 1.5rem !important;
+                    font-weight: 600 !important;
+                }
+            }
+        }
+    }
+}

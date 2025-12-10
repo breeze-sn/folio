@@ -3,6 +3,8 @@ import DARKMODE from "./dark-mode_17370912.png"
 import LIGHTMODE from "./light_8979977.png"
 import PAPER_PLANE from "./paper.png"
 import PROFILE_VECTOR from "./img.png"
+import HAMBURGER from "./hamburger_15627588 1.svg"
+import CLOSE from "./xmark.svg"
 
 // Social Media Icons
 import LINKEDIN from "./linkedin.svg"
@@ -21,6 +23,8 @@ export{
     LIGHTMODE,
     PAPER_PLANE,
     PROFILE_VECTOR,
+    HAMBURGER,
+    CLOSE,
     LINKEDIN,
     BEHANCE,
     MEDIUM,

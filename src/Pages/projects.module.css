@@ -25,3 +25,53 @@
         box-sizing: border-box;
     }
 }
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .mainbox {
+        padding: 4% 0;
+
+        .header {
+            padding: 0px 8%;
+            font-size: 2.5rem;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .mainbox {
+        padding: 80px 0 60px 0;
+        width: 100%;
+        overflow-x: hidden;
+
+        .header {
+            padding: 0px 24px;
+            font-size: 0.875rem;
+            margin-bottom: 32px;
+            font-weight: 400;
+            opacity: 0.6;
+
+            h1 {
+                font-size: 0.875rem;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+
+        .projects {
+            width: 100%;
+        }
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .mainbox {
+        padding: 80px 0 60px 0;
+    }
+}

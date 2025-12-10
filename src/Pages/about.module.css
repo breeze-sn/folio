@@ -196,6 +196,21 @@
     margin: 0;
 }
 
+/* Copyright Section */
+.copyrightSection {
+    display: none;
+    text-align: center;
+    padding: 32px 0 24px 0;
+    margin-top: 64px;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    font-weight: 400;
+    opacity: 0.6;
+    margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .content {
@@ -215,11 +230,24 @@
 
 @media (max-width: 768px) {
     .content {
-        padding: 4rem 6%;
+        padding: 110px 24px 48px 24px;
+    }
+
+    .aboutSection {
+        margin-bottom: 48px;
+        margin-top: 30px;
+    }
+
+    .sectionLabel {
+        font-size: 0.875rem;
+        margin-bottom: 16px;
+        opacity: 0.6;
     }
 
     .name {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 1.3;
         max-width: 100%;
         white-space: normal;
     }
@@ -227,16 +255,59 @@
     .storySection,
     .contactSection {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 0;
+        margin-bottom: 48px;
     }
 
     .storyLabel,
     .contactLabel {
-        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
+        margin-bottom: 16px;
+        opacity: 0.6;
+    }
+
+    .storyContent {
+        gap: 16px;
     }
 
     .paragraph {
-        font-size: 0.95rem;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        opacity: 0.8;
+    }
+
+    .contactContent {
+        gap: 32px;
+    }
+
+    .contactSubheading {
+        font-size: 0.9375rem;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .socialIcons {
+        gap: 15px !important;
+    }
+
+    .socialIcon {
+        width: 25px !important;
+        height: 25px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .socialIconImg {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+    }
+
+    .emailLink,
+    .downloadButton {
+        font-size: 0.9375rem;
+        font-weight: 400;
     }
 
     .quote {
@@ -244,7 +315,16 @@
     }
 
     .quoteSection {
-        margin-top: 5rem;
+        margin-top: 48px;
+        padding: 0;
+    }
+
+    .copyrightSection {
+        display: block;
+    }
+
+    .container > div:last-child {
+        display: none;
     }
 }
 

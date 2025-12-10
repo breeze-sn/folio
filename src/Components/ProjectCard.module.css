@@ -77,3 +77,139 @@
         opacity: 100%;
     }
 }
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .maincontainer {
+        padding: 3% 0px;
+
+        section {
+            width: 65%;
+            padding-left: 30px;
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 400px;
+            right: -400px;
+        }
+
+        i {
+            font-size: 1.8rem;
+            right: 150px;
+        }
+    }
+
+    .hover {
+        img {
+            right: 0px;
+        }
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .maincontainer {
+        flex-direction: row;
+        padding: 24px 24px;
+        align-items: flex-start;
+        position: relative;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 100vw;
+
+        b {
+            display: none;
+        }
+
+        span {
+            padding-left: 0;
+            font-size: 0.875rem;
+            opacity: 0.4;
+            margin: 0;
+            min-width: 40px;
+            font-weight: 400;
+        }
+
+        section {
+            width: calc(100% - 40px);
+            padding-left: 24px;
+            font-size: 1.125rem !important;
+            margin: 0;
+
+            h2 {
+                font-weight: 600 !important;
+                line-height: 1.3 !important;
+                margin-bottom: 4px !important;
+                font-size: 1.125rem !important;
+            }
+
+            p {
+                padding-left: 0;
+                font-size: 0.875rem !important;
+                opacity: 0.6;
+                font-weight: 400 !important;
+                margin: 0;
+            }
+        }
+
+        i {
+            display: none;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .hover {
+        background-color: transparent;
+
+        span {
+            font-size: 0.875rem;
+            opacity: 0.5;
+        }
+
+        section {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .maincontainer {
+        padding: 24px 24px;
+
+        span {
+            font-size: 0.875rem !important;
+        }
+
+        section {
+            font-size: 1.125rem !important;
+
+            h2 {
+                font-size: 1.125rem !important;
+            }
+
+            p {
+                font-size: 0.875rem !important;
+            }
+        }
+
+        i {
+            display: none;
+        }
+    }
+
+    .hover {
+        span {
+            font-size: 0.875rem !important;
+        }
+
+        section {
+            font-size: 1.125rem !important;
+        }
+    }
+}

@@ -23,3 +23,42 @@
         height: 150px;
     }
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .inputfield {
+        i {
+            font-size: 1.1rem;
+        }
+
+        input,
+        textarea {
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .inputfield {
+        i {
+            font-size: 1rem;
+        }
+
+        input,
+        textarea {
+            font-size: 1rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+    }
+}

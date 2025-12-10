@@ -65,3 +65,99 @@
         }
     }
 }
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .contact_container {
+        padding: 0px 8%;
+        padding-top: 80px;
+
+        .header {
+            width: 60%;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            span {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .contact_container {
+        padding: 0px 6%;
+        padding-top: 60px;
+        margin-bottom: 60px;
+
+        .header {
+            width: 100%;
+            font-size: 1rem;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 30px;
+            }
+
+            span {
+                font-size: 1.5rem;
+                margin-bottom: -10px;
+            }
+
+            .status_message {
+                font-size: 0.9rem;
+            }
+
+            section {
+                p {
+                    font-size: 1.3rem;
+                }
+
+                img {
+                    width: 26px;
+                }
+            }
+        }
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .contact_container {
+        padding: 0px 5%;
+        padding-top: 50px;
+        margin-bottom: 50px;
+
+        .header {
+            font-size: 0.9rem;
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 25px;
+            }
+
+            span {
+                font-size: 1.25rem;
+            }
+
+            .status_message {
+                font-size: 0.85rem;
+                padding: 8px;
+            }
+
+            section {
+                p {
+                    font-size: 1.1rem;
+                }
+
+                img {
+                    width: 24px;
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+}

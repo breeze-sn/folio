@@ -67,7 +67,7 @@ function doPost(e) {
 }
 
 function sendEmailNotification(date, time, name, email, message) {
-  var recipient = "nagekarsimran@gmail.com";
+  var recipient = "nagekarsimran@outlook.com";
   
   var subject = (name || 'Unknown Visitor') + " - New Contact Form Submission";
   
@@ -240,7 +240,7 @@ Add this function to your Apps Script to get email notifications:
 
 ```javascript
 function sendEmailNotification(name, email, message) {
-  var recipient = "nagekarsimran@gmail.com"; // Change this to your email
+  var recipient = "nagekarsimran@outlook.com"; // Change this to your email
   var subject = "New Contact Form Submission from " + name;
   var body = "Name: " + name + "\n" +
              "Email: " + email + "\n" +

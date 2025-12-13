@@ -89,8 +89,8 @@ function AboutPage() {
                         {/* Email */}
                         <div className={styles.emailBlock}>
                             <h4 className={styles.contactSubheading}>Email</h4>
-                            <a href="mailto:nagekarsimran@gmail.com" className={styles.emailLink}>
-                                nagekarsimran@gmail.com
+                            <a href="mailto:nagekarsimran@outlook.com" className={styles.emailLink}>
+                                nagekarsimran@outlook.com
                             </a>
                         </div>
 

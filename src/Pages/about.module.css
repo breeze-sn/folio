@@ -128,11 +128,14 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: brightness(0) saturate(100%);
 }
 
 [data-theme="dark"] .socialIconImg {
     filter: brightness(0) saturate(100%) invert(1);
+}
+
+[data-theme="light"] .socialIconImg {
+    filter: brightness(0) saturate(100%);
 }
 
 /* Email */

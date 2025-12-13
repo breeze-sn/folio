@@ -2,6 +2,7 @@ import Navbar from "../Components/global/Navbar"
 import styles from "./Home.module.css"
 import ProjectCard from "../Components/ProjectCard"
 import HomeFooter from "../Components/global/HomeFooter"
+import SEO from "../Components/global/SEO"
 
 import projects from '../store/projects.json' with { type: 'json' };
 import Expertise from '../store/Expertise.json' with { type: 'json' };
@@ -21,6 +22,11 @@ function Home() {
 
     return (
         <>
+            <SEO 
+                title="Folio'25 - Simran Nagekar"
+                description="Portfolio of Simran Nagekar - Game Experience Designer, Design Generalist & Creative Technology Explorer. Explore innovative game design projects and interactive experiences."
+                url="https://simrann.dev/"
+            />
             <Navbar />
             <div className={`${styles.mainbox}`} data-theme={theme}>
                 <div className={`${styles.section} ${styles.dashboard}`}>

@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import Icon from '../Components/global/Icon'
 import * as images from "../Images/index"
 import InputField from '../Components/global/InputField'
+import SEO from '../Components/global/SEO'
 
 function ContactPage() {
     const theme = useSelector((state) => state.themeReducer.mode)
@@ -85,6 +86,11 @@ function ContactPage() {
 
     return (
         <>
+            <SEO 
+                title="Contact - Simran Nagekar"
+                description="Get in touch with Simran Nagekar for game design collaborations, projects, or inquiries. Let's create something amazing together."
+                url="https://simrann.dev/contact"
+            />
             <div className={styles.contact_container} data-theme={theme}>
                 <div className={styles.header}>
                     <span>Contact</span>

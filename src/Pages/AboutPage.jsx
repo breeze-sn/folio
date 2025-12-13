@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import * as images from "../Images/index"
 import HomeFooter from "../Components/global/HomeFooter"
 import resumePDF from "../Components/Files/resume.pdf"
+import SEO from "../Components/global/SEO"
 
 function AboutPage() {
     const theme = useSelector((state) => state.themeReducer.mode);
@@ -29,6 +30,13 @@ function AboutPage() {
     };
 
     return (
+        <>
+            <SEO 
+                title="About - Simran Nagekar"
+                description="Simran Nagekar, a Game Experience Designer and Creative Technologist. View resume, skills, and connect on social media."
+                url="https://simrann.dev/about"
+            />
+            
         <div className={styles.container} data-theme={theme}>
             <div className={styles.content}>
                 {/* About Section */}
@@ -108,6 +116,7 @@ function AboutPage() {
             {/* Footer */}
             <HomeFooter />
         </div>
+        </>
     )
 }
 

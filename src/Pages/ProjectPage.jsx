@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import projects from "../store/projects.json" with { type: 'json' };
 import { CHANGE_PAGE } from '../store/types';
 import { useDispatch, useSelector } from 'react-redux';
+import SEO from '../Components/global/SEO';
 
 function ProjectPage() {
     const dispatch = useDispatch()
@@ -18,6 +19,11 @@ function ProjectPage() {
 
     return (
         <>
+            <SEO 
+                title={`${project.name} - Simran Nagekar`}
+                description={project.description || project.about}
+                url={`https://simrann.dev/project/${index}`}
+            />
             <div className={styles.project} data-theme={theme}>
                 <div className={styles.header}>
                     <h1>{project.name}</h1>

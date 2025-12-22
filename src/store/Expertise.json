@@ -8,11 +8,12 @@
         "description": "Improving game quality through detailed testing, feedback, and balance refinement."
     },
     {
-        "name": "Graphic Design",
-        "description": "Crafting visually compelling designs that communicate clearly and creatively."
+        "name": "Product Design",
+        "description": "Designing user-centered digital products by balancing usability, functionality, and visual clarity."
     },
     {
         "name": "UI Design",
         "description": "Creating clean, user-friendly interfaces with a minimalist, user-focused approach."
     }
+    
 ]

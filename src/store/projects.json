@@ -7,14 +7,6 @@
         "link": "https://github.com/breeze-sn/folio"
     },
     {
-        "name": "Astro Dodge",
-        "description": "Game Design",
-        "about": "Astro Dodge is an arcade space-survival game where players dodge asteroids, collect rewards, and chase high scores. I designed the UI, created game assets, proposed animation ideas, and helped shape the overall visual and gameplay feel.",
-        "skills": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Unity"],
-        "link": "https://play.google.com/store/apps/details?id=com.BlitzauraGames.AstroDodge&pcampaignid=web_share"
-    
-    },
-    {
         "name": "Quick Air",
         "description": "UI/UX",
         "about": "QuickAir is an AI-powered resume builder than lets users create personalized resumes through a simple chat with an intelligent assistant, making resume writing easy and accessible for everyone.",

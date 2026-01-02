@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styles from "./contact.module.css"
 import { useSelector } from 'react-redux'
 import Icon from '../Components/global/Icon'
@@ -8,6 +8,8 @@ import SEO from '../Components/global/SEO'
 
 function ContactPage() {
     const theme = useSelector((state) => state.themeReducer.mode)
+    const [visibleSections, setVisibleSections] = useState([0])
+    const sectionRefs = useRef([])
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -21,6 +23,28 @@ function ContactPage() {
             [field]: value
         }))
     }
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const index = parseInt(entry.target.dataset.index)
+                        setVisibleSections((prev) => 
+                            !prev.includes(index) ? [...prev, index] : prev
+                        )
+                    }
+                })
+            },
+            { threshold: 0.1, rootMargin: '50px' }
+        )
+
+        sectionRefs.current.forEach((ref) => {
+            if (ref) observer.observe(ref)
+        })
+
+        return () => observer.disconnect()
+    }, [])
 
     const sendMessage = async () => {
         // Validate form data
@@ -92,7 +116,11 @@ function ContactPage() {
                 url="https://simrann.dev/contact"
             />
             <div className={styles.contact_container} data-theme={theme}>
-                <div className={styles.header}>
+                <div 
+                    ref={(el) => (sectionRefs.current[0] = el)}
+                    data-index="0"
+                    className={`${styles.header} ${styles.sectionWrapper} ${visibleSections.includes(0) ? styles.visible : ''}`}
+                >
                     <span>Contact</span>
                     <h1>Get in touch.</h1>
                     <InputField 

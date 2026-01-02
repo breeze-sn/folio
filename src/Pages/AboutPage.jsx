@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react'
 import styles from "./about.module.css"
 import { useSelector } from 'react-redux'
 import * as images from "../Images/index"
@@ -7,6 +8,8 @@ import SEO from "../Components/global/SEO"
 
 function AboutPage() {
     const theme = useSelector((state) => state.themeReducer.mode);
+    const [visibleSections, setVisibleSections] = useState([0])
+    const sectionRefs = useRef([])
 
     const socialLinks = [
         { name: 'LinkedIn', url: 'https://linkedin.com/in/simransn', icon: images.LINKEDIN },
@@ -29,6 +32,28 @@ function AboutPage() {
         document.body.removeChild(link);
     };
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const index = parseInt(entry.target.dataset.index)
+                        setVisibleSections((prev) => 
+                            !prev.includes(index) ? [...prev, index] : prev
+                        )
+                    }
+                })
+            },
+            { threshold: 0.1, rootMargin: '50px' }
+        )
+
+        sectionRefs.current.forEach((ref) => {
+            if (ref) observer.observe(ref)
+        })
+
+        return () => observer.disconnect()
+    }, [])
+
     return (
         <>
             <SEO 
@@ -40,13 +65,21 @@ function AboutPage() {
         <div className={styles.container} data-theme={theme}>
             <div className={styles.content}>
                 {/* About Section */}
-                <section className={styles.aboutSection}>
+                <section 
+                    ref={(el) => (sectionRefs.current[0] = el)}
+                    data-index="0"
+                    className={`${styles.aboutSection} ${styles.sectionWrapper} ${visibleSections.includes(0) ? styles.visible : ''}`}
+                >
                     <h2 className={styles.sectionLabel}>About</h2>
                     <h1 className={styles.name}>Design Generalist & Creative Technology Explorer.</h1>
                 </section>
 
                 {/* Story Section */}
-                <section className={styles.storySection}>
+                <section 
+                    ref={(el) => (sectionRefs.current[1] = el)}
+                    data-index="1"
+                    className={`${styles.storySection} ${styles.sectionWrapper} ${visibleSections.includes(1) ? styles.visible : ''}`}
+                >
                     <h3 className={styles.storyLabel}>01 | Story</h3>
                     <div className={styles.storyContent}>
                         <p className={styles.paragraph}>
@@ -64,7 +97,11 @@ function AboutPage() {
                 </section>
 
                 {/* Contact Section */}
-                <section className={styles.contactSection}>
+                <section 
+                    ref={(el) => (sectionRefs.current[2] = el)}
+                    data-index="2"
+                    className={`${styles.contactSection} ${styles.sectionWrapper} ${visibleSections.includes(2) ? styles.visible : ''}`}
+                >
                     <h3 className={styles.contactLabel}>02 | Contact</h3>
                     <div className={styles.contactContent}>
                         {/* Socials */}
@@ -105,7 +142,11 @@ function AboutPage() {
                 </section>
 
                 {/* Quote Section */}
-                <section className={styles.quoteSection}>
+                <section 
+                    ref={(el) => (sectionRefs.current[3] = el)}
+                    data-index="3"
+                    className={`${styles.quoteSection} ${styles.sectionWrapper} ${visibleSections.includes(3) ? styles.visible : ''}`}
+                >
                     <blockquote className={styles.quote}>
                         "The creation of a single world comes from a huge number of fragments and chaos."
                     </blockquote>

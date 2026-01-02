@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react'
 import Navbar from "../Components/global/Navbar"
 import styles from "./Home.module.css"
 import ProjectCard from "../Components/ProjectCard"
@@ -15,10 +16,34 @@ import * as images from "../Images"
 function Home() {
     const dispatch = useDispatch();
     const theme = useSelector((state) => state.themeReducer.mode);
+    const [visibleSections, setVisibleSections] = useState([0])
+    const sectionRefs = useRef([])
 
     const changepage = (path) => {
         dispatch({ type: CHANGE_PAGE, payload: { url: path, mode: true } });
     };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const index = parseInt(entry.target.dataset.index)
+                        setVisibleSections((prev) => 
+                            !prev.includes(index) ? [...prev, index] : prev
+                        )
+                    }
+                })
+            },
+            { threshold: 0.1, rootMargin: '50px' }
+        )
+
+        sectionRefs.current.forEach((ref) => {
+            if (ref) observer.observe(ref)
+        })
+
+        return () => observer.disconnect()
+    }, [])
 
     return (
         <>
@@ -29,14 +54,22 @@ function Home() {
             />
             <Navbar />
             <div className={`${styles.mainbox}`} data-theme={theme}>
-                <div className={`${styles.section} ${styles.dashboard}`}>
+                <div 
+                    ref={(el) => (sectionRefs.current[0] = el)}
+                    data-index="0"
+                    className={`${styles.section} ${styles.dashboard} ${styles.sectionWrapper} ${visibleSections.includes(0) ? styles.visible : ''}`}
+                >
                     <h1>port<span>folio</span>.</h1>
                     <section>
                         <p></p>
                         <span>Game Experience Designer</span>
                     </section>
                 </div>
-                <div className={`${styles.section} ${styles.about}`}>
+                <div 
+                    ref={(el) => (sectionRefs.current[1] = el)}
+                    data-index="1"
+                    className={`${styles.section} ${styles.about} ${styles.sectionWrapper} ${visibleSections.includes(1) ? styles.visible : ''}`}
+                >
                     <div className={`${styles.left}`}>
                         <img src={images.PROFILE_VECTOR} alt="Error" style={theme === "dark" ? {filter: "invert(1)"}:null}/>
                     </div>
@@ -73,7 +106,11 @@ function Home() {
                         </section>
                     </div>
                 </div>
-                <div className={`${styles.section} ${styles.projects}`}>
+                <div 
+                    ref={(el) => (sectionRefs.current[2] = el)}
+                    data-index="2"
+                    className={`${styles.section} ${styles.projects} ${styles.sectionWrapper} ${visibleSections.includes(2) ? styles.visible : ''}`}
+                >
                     <div className={styles.header}>Projects</div>
                     {
                         projects.slice(0, 2).map((project, index) => {
@@ -87,7 +124,11 @@ function Home() {
                         <div onClick={() => changepage('/project')} className={styles.viewAllLink}>view all projects &rarr;</div>
                     </div>
                 </div>
-                <div className={styles.mobileFooterSection}>
+                <div 
+                    ref={(el) => (sectionRefs.current[3] = el)}
+                    data-index="3"
+                    className={`${styles.mobileFooterSection} ${styles.sectionWrapper} ${visibleSections.includes(3) ? styles.visible : ''}`}
+                >
                     <div className={styles.footerTitle}>Quick Links</div>
                     <div className={styles.footerLinks}>
                         <a onClick={() => changepage('/about')}>about</a>
